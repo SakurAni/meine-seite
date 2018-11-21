@@ -31,3 +31,4 @@ F:\meine-seite\obj\Debug\netcoreapp2.1\meine-seite.Views.pdb
 F:\meine-seite\obj\Debug\netcoreapp2.1\meine-seite.dll
 F:\meine-seite\obj\Debug\netcoreapp2.1\meine-seite.pdb
 F:\meine-seite\obj\Debug\netcoreapp2.1\meine-seite.csproj.CopyComplete
+F:\meine-seite\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Menue.g.cshtml.cs

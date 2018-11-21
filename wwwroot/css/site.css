@@ -1,4 +1,21 @@
-﻿/* flexbox */
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+/* wrapper */
+.wrapper {
+    width: 1200px;
+    margin: auto;
+}
+
+/* flexbox */
 .flex {
     display: flex;
 }
@@ -11,10 +28,35 @@
 /* menue */
 .menue-wrapper {
     width: 1200px;
+    height: 100px;
     position: fixed;
     left: 50%;
+    background-color: #fff;
     transform: translateX(-50%);
 }
+.menue-wrapper::before { /* triangle left */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+    margin-left: -50px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #fff;
+  }
+
+  .menue-wrapper::after { /* triangle right */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -50px;
+    z-index: -1;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #fff;
+  }
 
 .logo_name-wrapper {
     flex-grow: 1;
@@ -50,3 +92,40 @@
     justify-content: center;
 }
 
+/* header region */ 
+.header_home {
+    background-image: linear-gradient(to right, rgba(42,198,193,0.7) 0%, rgba(72,224,174,0.7) 100%);
+    width: 100%;
+    height: 600px;
+}
+
+.welcome_text-area {
+    font-family: 'Permanent Marker', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.welcome-text {
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    padding-top: 250px;
+    padding-left: 100px;
+}
+
+.ani-text {
+    font-size: 80px;
+    display: block;
+    text-align: right;
+    padding-top: 50px;
+    padding-right: 100px;
+}
+
+/* about region */ 
+.region_about_expertise {
+    height: 600px;
+    font-family: 'Nunito', sans-serif;
+    color: #616665;
+    font-size: 24px;
+}
