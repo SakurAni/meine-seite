@@ -54,7 +54,7 @@ using meine_seite.Models;
             WriteLiteral("<div class=\"menue-wrapper flex\">\r\n    <div class=\"logo_name-wrapper flex\">\r\n        <div class=\"logo\">");
             EndContext();
             BeginContext(102, 29, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "961d2a8141d8463baffd85bf5df4080e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "2e8570f6a82e47d1892089afbcbbc6a7", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

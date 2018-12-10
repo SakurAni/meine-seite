@@ -20,7 +20,7 @@
 
     <div class="container body-content">
         @RenderBody()
-       
+        @await Html.PartialAsync("_Footer")
     </div>
 
     <environment include="Development">
