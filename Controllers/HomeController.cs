@@ -15,5 +15,10 @@ namespace meine_seite.Controllers
             return View();
         }
 
+        public IActionResult Datenschutz()
+        {
+            return this.View();
+        }
+
     }
 }

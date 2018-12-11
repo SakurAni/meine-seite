@@ -5,11 +5,22 @@
 }
 
 body {
-    background-image: url('../images/background.png');
-    background-repeat: no-repeat;
-    background-position: top right;
+    background: url('../images/background_righttop.png') right top no-repeat, 
+                url('../images/background_leftbottom.png') left bottom no-repeat;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
+}
+
+a {
+    color: #23A38F;
+}
+
+.offset-top-m {
+    margin-top: 40px;
+}
+
+.width-50 {
+    width: 50%;
 }
 
 /* wrapper */
@@ -44,10 +55,11 @@ body {
 h1 {
     font-size: 36px;
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
     margin: 20px 0;
     width: 100%;
+    color: #616665;
 }
 
 h1:after {
@@ -61,6 +73,15 @@ h1:after {
 
 .footer h1 {
     color: #fff;
+}
+
+h2 {
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    width: 100%;
 }
 
 /* menue */
@@ -165,24 +186,82 @@ h1:after {
 
 /* about region */ 
 .region_about_expertise {
-    height: 600px;
     font-family: 'Nunito', sans-serif;
     color: #616665;
     font-size: 24px;
 }
 
-/* footer */
-.footer_background {
+.contactme_visitme {
+    width: 33%;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.aboutme_expertise {
+    width: 66%;
+    padding-left: 20px;
+    margin-top: -50px;
+    position: relative;
+}
+
+.aboutme_expertise:after {
+    border-radius: 0 0 120px 120px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    content: '';
+    display: block;
+    height: 280px;
+    left: 20px;
     position: absolute;
-    bottom: 0;
-    transform: rotate(180deg);
+    top: 0;
+    width: calc(100% - 20px);
     z-index: -1;
 }
 
+.about_fotome img {
+    border-radius: 50%;
+    border: 10px solid #fff;
+    margin-top: -150px;
+}
+
+.social-icon {
+    font-size: 50px;
+    margin: 5px 25px;
+    display: inline-block;
+}
+
+.aboutme {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 80%, rgba(255,255,255,0) 100%);
+    border-radius: 6px;
+    z-index: 0;
+}
+
+.aboutme, .expertise {
+    padding: 1px 20px;
+}
+
+.expertise .flex {
+    text-align: center;
+}
+
+/* footer */
 .footer {
     background: #0F7364;
     position: relative;
-    opacity: 0.99;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.footer .wrapper {
+    margin-bottom: 40px;
+}
+
+.footer .flex_grow_2 {
+    max-width: 50%;
+}
+
+.footer p {
+    font-weight: 700;
+    padding: 20px 0;
 }
 
 .footer_copyright {
@@ -192,4 +271,31 @@ h1:after {
     text-align: center;
     line-height: 50px;
     opacity: 0.6;
+}
+
+/* buttons */
+.myButton {
+	background-color: #39B9A5;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	font-family:'Nunito', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+	padding: 15px 30px;
+	text-decoration: none;
+    text-shadow: 0px 1px 0px #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: background-color 0.3s;
+}
+.myButton:hover {
+	background-color:#23A38F;
+}
+.myButton:active {
+	background-color: #0F7364;
+	box-shadow: inset 0px 2px 10px rgba(0,0,0,0.4);
 }
