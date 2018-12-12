@@ -20,5 +20,15 @@ namespace meine_seite.Controllers
             return this.View();
         }
 
+        public IActionResult Haftungsausschluss()
+        {
+            return this.View();
+        }
+
+        public IActionResult Bildnachweise()
+        {
+            return this.View();
+        }
+
     }
 }
