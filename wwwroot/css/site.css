@@ -21,7 +21,7 @@ a {
     margin-top: 40px;
 }
 
-.offset-bottom-m {
+.offset-bottom-m, .wrapper.offset-bottom-m {
     margin-bottom: 40px;
 }
 
@@ -324,29 +324,56 @@ h3 {
 }
 
 /* meinungen region */
+.kundenmeinungen::before { /* triangle left */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    margin-top: 0px;
+    border-style: solid;
+    border-width: 0px 450px 600px 0px;
+    border-color: transparent transparent #A2DDD3 transparent;
+  } 
+
+.kundenmeinungen::after { /* triangle left */
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+    margin-top: 0px;
+    border-style: solid;
+    border-width: 600px 0px 0px 450px;
+    border-color: transparent transparent #A2DDD3 transparent;
+  } 
+
 .meinungen-block {
     max-width: 33%;
     margin: 40px;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.2);
 }
 
 .meinungen-img img {
     width: 100%;
 }
 
-.meinungen-img::before { /* triangle left */
+.meinungen-img::before { 
     content: "";
     width: 0;
     height: 0;
     position: absolute;
     z-index: 1;
-    margin-left: 135px;
+    margin-left: 137px;
     margin-top: 142px;
     border-style: solid;
     border-width: 0px 0px 70px 185px;
     border-color: transparent transparent rgba(72,224,174,0.5) transparent;
   }
 
-  .meinungen-img::after { /* triangle right */
+  .meinungen-img::after { 
     content: "";
     width: 0;
     height: 0;
@@ -361,6 +388,7 @@ h3 {
   .meinungen-nametitel {
     margin-top: -90px;
     padding: 15px;
+    position: absolute;
   }
 
   .meinungen-nametitel h2{
@@ -374,6 +402,10 @@ h3 {
     color: #fff;
     opacity: 50%;
     margin: 0;
+  }
+
+  .meinungen-text {
+    margin: 15px;
   }
 
 /* datenschutz seite */
