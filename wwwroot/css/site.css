@@ -344,13 +344,15 @@ h3 {
     position: absolute;
     z-index: 0;
     right: 0;
-    margin-top: 0px;
+    margin-top: -550px;
     border-style: solid;
-    border-width: 600px 0px 0px 450px;
+    border-width: 0px 450px 600px 0px;
     border-color: transparent transparent #A2DDD3 transparent;
+    transform: rotate(180deg);
   } 
 
 .meinungen-block {
+    background: #fff;
     max-width: 33%;
     margin: 40px;
     box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.2);
